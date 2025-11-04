@@ -1,4 +1,6 @@
-### 🐢 It's a racing game for three turtles:
+# Turtle-Race-Game
+
+🐢 It's a racing game for three turtles:
 
 > - **Tech:**  it uses Object-Oriented Programming (OOP).
 
