@@ -162,10 +162,10 @@ def print_result(winner_color, choiced_color):
     # Arabic color names that the user may input — used to accept Arabic input
     Arabic_colors =  ["أبيض", "أخضر","أحمر"]
     
-    A_r = False
+    is_arabic = False
 
     if choiced_color in  Arabic_colors:
-        A_r = True
+        is_arabic = True
 
         if choiced_color == Arabic_colors[0]:
             choiced_color = 'white'
@@ -182,7 +182,7 @@ def print_result(winner_color, choiced_color):
         window.bgcolor("red") # change the background to red
 
         # Write losing messages in Arabic if the input was Arabic
-        if A_r:
+        if is_arabic:
 
             massage.write(f" 😔 💔 🥹 🤝 لقد خسرت", align="center", font= ("Source Sans Pro", 20, "normal"))
 
@@ -193,7 +193,7 @@ def print_result(winner_color, choiced_color):
     else:
 
         # Write winning messages in Arabic if the input was Arabic
-        if A_r:
+        if is_arabic:
 
             massage.write(f"😁😄☺️🎈🎉🥳💃مبروك، لقد فزت ", align="center", font= ("Source Sans Pro", 20, "italic"))
 
